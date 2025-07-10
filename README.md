@@ -54,4 +54,4 @@ If you’d like to collaborate, discuss a project, or just say hi, use the conta
 
 ---
 
-**Designed & developed by Alex Styles.**
+**Designed & developed by Mahmoud H G Fares.**
