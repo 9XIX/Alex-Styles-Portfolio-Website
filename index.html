@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Alex Styles | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#about" class="nav-link" data-tooltip="Learn more about Alex">About Me</a>
+      <a href="#portfolio" class="nav-link" data-tooltip="See Alex's work">Portfolio</a>
+      <a href="#contact" class="nav-link" data-tooltip="Get in touch">Contact</a>
+    </nav>
+    <h1>Alex Styles</h1>
+    <p class="subtitle">Creative Graphic Designer</p>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Alex Styles, a passionate graphic designer with a keen eye for modern aesthetics and impactful branding. With experience across print and digital media, I help clients bring their visions to life through creative solutions.
+      </p>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item" tabindex="0" data-modal="modal1">
+          <img src="project1.jpg" alt="Brand Identity Project">
+          <h3>Brand Identity</h3>
+        </div>
+        <div class="portfolio-item" tabindex="0" data-modal="modal2">
+          <img src="project2.jpg" alt="Website Redesign Project">
+          <h3>Website Redesign</h3>
+        </div>
+        <div class="portfolio-item" tabindex="0" data-modal="modal3">
+          <img src="project3.jpg" alt="Packaging Design Project">
+          <h3>Packaging Design</h3>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Modals for project details -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" tabindex="0">&times;</span>
+      <h2>Brand Identity</h2>
+      <p>
+        A comprehensive branding project for a startup, including logo design, typography, and color palette. The result is a modern, recognizable visual identity.
+      </p>
+    </div>
+  </div>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" tabindex="0">&times;</span>
+      <h2>Website Redesign</h2>
+      <p>
+        Redesigned a corporate website for better usability, accessibility, and visual appeal. Focused on mobile-first responsiveness and engaging user experience.
+      </p>
+    </div>
+  </div>
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" tabindex="0">&times;</span>
+      <h2>Packaging Design</h2>
+      <p>
+        Crafted unique packaging concepts for a boutique food brand, incorporating eco-friendly materials and eye-catching graphics.
+      </p>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Alex Styles</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
